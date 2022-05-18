@@ -1,0 +1,189 @@
+/*
+comments
+
+font include
+root
+reset
+nab bar
+===========
+*/
+
+
+/*
+font include
+=============
+*/
+@font-face {
+    src: url("../fonts/BPGExtraSquareMtavruli.ttf");
+    font-family: BPG;
+}
+
+
+/*
+root
+=============
+*/
+:root{
+    --main-color: #3E515A;
+    --white-color: #ffffff;
+    --hover-color: #A80532;
+    --bg-color: #F6F3E0;
+    --font-family:  BPG;
+}
+
+
+/*
+reset
+=======
+*/
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*nab bar
+===========
+*/
+.lad-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: center;
+
+    width: 100%;
+    max-width: 1920px;
+    height: 100px;
+    padding: 0 60px;
+    font-family: var(--font-family);
+
+    background-color: var(--bg-color);
+
+}
+
+
+.nav-list{
+    list-style-type: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list a:hover{
+    color: var(--hover-color);
+}
+
+.nav-list li:nth-child(1):before{
+    content: url("../img/Icon metro-home.svg");
+    margin-right: 4px;
+}
+
+.nav-list li:nth-child(1):hover:before{
+    content: url("../img/Icon metro-home active.svg");
+    margin-right: 4px;
+}
+
+.nav-list li:nth-child(2):before{
+    content: url("../img/about us.svg");
+    margin-right: 4px;
+}
+
+
+.nav-list li:nth-child(3):hover:before{
+    content: url("../img/Icon awesome-graduation-cap.svg");
+    margin-right: 4px;
+}
+
+.nav-list li:nth-child(3):before{
+    content: url("../img/Icon awesome-graduation-cap.svg");
+    margin-right: 4px;
+}
+
+
+.nav-list li:nth-child(3):hover:before{
+    content: url("../img/Icon awesome-graduation-cap active.svg");
+    margin-right: 4px;
+}
+
+
+.nav-list li:nth-child(4):before{
+    content: url("../img/Icon awesome-users.svg");
+    margin-right: 4px;
+}
+
+
+.nav-list li:nth-child(4):hover:before{
+    content: url("../img/Icon awesome-users active.svg");
+    margin-right: 4px;
+}
+
+
+.nav-list li:nth-child(5):before{
+    content: url("../img/Icon material-ondemand-video.svg");
+    margin-right: 4px;
+}
+
+
+.nav-list li:nth-child(5):hover:before{
+    content: url("../img/Icon material-ondemand-video active.svg");
+    margin-right: 4px;
+}
+
+.nav-list li:nth-child(6):before{
+    content: url("../img/Icon ionic-ios-images.svg");
+    margin-right: 4px;
+}
+
+
+.nav-list li:nth-child(6):hover:before{
+    content: url("../img/Icon ionic-ios-images active.svg");
+    margin-right: 4px;
+}
+
+
+.nav-list li:nth-child(7):before{
+    content: url("../img/Icon ionic-ios-settings.svg");
+    margin-right: 4px;
+}
+
+
+.nav-list li:nth-child(7):hover:before{
+    content: url("../img/Icon ionic-ios-settings active.svg");
+    /*margin-right: 4px;*/
+}
+
+.nav-list li:active{
+    color: var(--hover-color);
+}
+
+.nav-list a{
+    text-decoration: none;
+    margin-right: 41px;
+    color: var(--main-color);
+}
+
+.lan-title{
+    display: inline-block;
+
+    margin-right: 14px;
+}
+
+.lang-bar{
+    display: flex;
+    justify-content: space-between;
+    width: 135px;
+}
+
+.lang-bar .lan-title a{
+    text-decoration: none;
+    border: 1px solid black;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 18px 13px;
+}
+
+.lan-ge:visited{
+    background-color: var(--hover-color);
+}
